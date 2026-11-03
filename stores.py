@@ -92,6 +92,9 @@ def fetch_json(store_id: str, url: str, params: dict, config: dict) -> dict:
             last_error = f"timeout de {config['timeout_seconds']} s"
         except requests.ConnectionError as error:
             last_error = f"error de conexión: {error}"
+        except requests.RequestException as error:
+            # Otros errores de requests (respuesta cortada, demasiadas redirecciones...): no se reintentan.
+            raise StoreError(f"error en el request: {error}") from error
         else:
             status = response.status_code
             if status in store["ok_status_codes"]:
@@ -223,8 +226,13 @@ def parse_product(store_id: str, raw_product: dict, domain: str) -> Product | No
 def parse_search_response(store_id: str, data: dict, domain: str) -> list[Product]:
     """Convierte la respuesta completa de una búsqueda en una lista de Product."""
     products = []
-    for raw_product in data.get("products", []):
-        product = parse_product(store_id, raw_product, domain)
+    for raw_product in data.get("products") or []:
+        try:
+            product = parse_product(store_id, raw_product, domain)
+        except (KeyError, TypeError, AttributeError, ValueError, ArithmeticError) as error:
+            # Un producto con datos incompletos no debe tumbar toda la búsqueda.
+            logger.warning("[%s] producto descartado por datos incompletos: %s", store_id, error)
+            continue
         if product is not None:
             products.append(product)
     return products
@@ -234,7 +242,7 @@ def parse_search_response(store_id: str, data: dict, domain: str) -> list[Produc
 # Función principal
 # ---------------------------------------------------------------------------
 
-def search_store(store_id: str, query: str, config: dict, limit: int = 10) -> list[Product]:
+def search_store(store_id: str, query: str, config: dict, limit: int = 20) -> list[Product]:
     """Busca un texto en una tienda y devuelve hasta `limit` productos de la tienda.
 
     Lanza StoreError si la tienda falla, para que quien llama decida qué hacer.
@@ -255,6 +263,6 @@ def search_store(store_id: str, query: str, config: dict, limit: int = 10) -> li
     products = parse_search_response(store_id, data, domain)
     logger.info(
         "[%s] búsqueda '%s': %d productos de la tienda (de %d resultados) en %.1f s",
-        store_id, query, len(products), len(data.get("products", [])), elapsed,
+        store_id, query, len(products), len(data.get("products") or []), elapsed,
     )
     return products[:limit]

@@ -1,10 +1,11 @@
 """
 products.py: datos y cálculos de CanastAI.
 
-Este archivo tiene tres partes:
+Este archivo tiene cuatro partes:
 1. Las dataclasses con las que se mueve la información (Product, Selection, ComparisonResult...).
 2. La normalización de presentaciones: leer "Arroz Diana x 500 g" y entender que son 500 g.
-3. Los cálculos: precio por kg/L/und, totales por tienda, óptimo dividido y ahorro.
+3. Los formatos para mostrar cifras: "$5.616", "1 kg".
+4. Los cálculos: precio por kg/L/und, totales por tienda, óptimo dividido y ahorro.
 
 Todo el dinero se maneja con Decimal para no tener errores de redondeo.
 El LLM nunca calcula cifras: las únicas que muestra CanastAI salen de estas funciones.
@@ -60,6 +61,7 @@ class ItemRow:
     selections: dict[str, Selection]   # store_id -> Selection
     cheapest_store: str | None         # None si ninguna tienda lo tiene
     compared_by: str                   # cómo se decidió el más barato
+    same_amount: bool                  # True si en todas las tiendas se compra la misma cantidad
 
 
 @dataclass
@@ -82,15 +84,17 @@ class ComparisonResult:
     consulted_at: str                       # fecha y hora de la consulta de precios
     rows: list[ItemRow]
     store_totals: dict[str, StoreTotal]
-    common_items: list[str]                 # ítems que encontraron todas las tiendas
-    comparable_totals: dict[str, Decimal]   # total por tienda solo con common_items
+    compared_stores: list[str]              # tiendas que encontraron al menos un producto
+    stores_without_products: list[str]      # tiendas que respondieron pero no tienen nada de la lista
+    common_items: list[str]                 # ítems que todas las tiendas tienen en la misma cantidad
+    comparable_totals: dict[str, Decimal]   # total por tienda solo con common_items (+ domicilio)
     split_plan: dict[str, str]              # ítem -> tienda donde sale más barato
     split_subtotal: Decimal
     split_delivery: Decimal
     split_total: Decimal
     split_comparable_total: Decimal         # óptimo dividido solo con common_items
     cheapest_store: str | None
-    most_expensive_store: str | None
+    most_expensive_store: str | None        # None si todas cuestan lo mismo
     savings_single_store: Decimal           # tienda más costosa - tienda más barata
     savings_split: Decimal                  # tienda más costosa - óptimo dividido
     savings_note: str
@@ -164,7 +168,10 @@ def build_presentation(number_text: str, unit_text: str) -> Presentation | None:
     if unit_key not in UNIT_CONVERSIONS:
         return None
     base_unit, factor = UNIT_CONVERSIONS[unit_key]
-    return Presentation(quantity=parse_number(number_text) * factor, base_unit=base_unit)
+    quantity = parse_number(number_text) * factor
+    if quantity == 0:
+        return None   # "0 g" no es una presentación útil y rompería el precio por unidad
+    return Presentation(quantity=quantity, base_unit=base_unit)
 
 
 def find_pack_count(name: str) -> int | None:
@@ -237,9 +244,10 @@ def other_weight_reading(name: str, first_reading: Presentation) -> Presentation
     size = build_presentation(size_match.group(1), size_match.group(2))
     if size is None:
         return None
-    if first_reading.quantity == size.quantity:
-        return Presentation(quantity=size.quantity * pack_count, base_unit="g")
-    return size
+    # parse_presentation multiplicó solo si el nombre dice "c/u"; la otra lectura es la contraria.
+    if EACH_UNIT_PATTERN.search(name) is not None:
+        return size
+    return Presentation(quantity=size.quantity * pack_count, base_unit="g")
 
 
 def presentation_from_store_fields(quantity_text: str, unit_text: str) -> Presentation | None:
@@ -364,45 +372,40 @@ def purchased_amount(selection: Selection) -> Decimal | None:
     return selection.product.quantity * selection.units
 
 
-def find_cheapest_store(selections: dict[str, Selection]) -> tuple[str | None, str]:
-    """Elige la tienda más barata para un ítem y dice cómo se comparó.
+def find_cheapest_store(selections: dict[str, Selection]) -> tuple[str | None, str, bool]:
+    """Elige la tienda más barata para un ítem.
 
-    - Si en todas las tiendas se compra la misma cantidad, gana el menor precio pagado.
-    - Si las cantidades difieren pero se miden igual (g, ml o und), gana el menor
-      precio por kg/L/und, porque comparar paquetes de distinto tamaño sería injusto.
-    - Si no se puede saber la cantidad, se compara el precio pagado y se avisa.
+    Devuelve (tienda, cómo se comparó, si en todas se compra la misma cantidad).
+    - Misma cantidad en todas las tiendas: gana el menor precio pagado.
+    - Cantidades distintas pero medidas igual (g, ml o und): gana el menor precio
+      por kg/L/und, porque comparar paquetes de distinto tamaño sería injusto.
+    - Sin cantidad conocida: se compara el precio pagado y se avisa.
     """
     found = []
-    for store_id, selection in selections.items():
+    for selection in selections.values():
         if selection.product is not None:
-            found.append((store_id, selection))
+            found.append(selection)
     if len(found) == 0:
-        return None, ""
+        return None, "", False
     if len(found) == 1:
-        return found[0][0], "única tienda que lo tiene"
+        return found[0].store_id, "única tienda que lo tiene", False
 
-    amounts = [purchased_amount(selection) for _, selection in found]
-    units = [selection.product.base_unit for _, selection in found]
+    amounts = [purchased_amount(selection) for selection in found]
+    base_units = [selection.product.base_unit for selection in found]
     all_amounts_known = None not in amounts
-    same_unit = len(set(units)) == 1
+    same_unit = len(set(base_units)) == 1
+    same_amount = all_amounts_known and same_unit and len(set(amounts)) == 1
 
-    all_same_amount = False
-    if all_amounts_known and same_unit:
-        all_same_amount = True
-        for amount in amounts:
-            if not are_close(amount, amounts[0]):
-                all_same_amount = False
-
-    if all_same_amount:
-        cheapest = min(found, key=lambda pair: line_cost(pair[1]))
-        return cheapest[0], "precio pagado (misma cantidad)"
+    if same_amount:
+        cheapest = min(found, key=line_cost)
+        return cheapest.store_id, "precio pagado (misma cantidad)", True
 
     if all_amounts_known and same_unit:
-        cheapest = min(found, key=lambda pair: price_per_reference_unit(pair[1].product))
-        return cheapest[0], f"precio por {reference_unit_label(units[0])} (presentaciones distintas)"
+        cheapest = min(found, key=lambda selection: price_per_reference_unit(selection.product))
+        return cheapest.store_id, f"precio por {reference_unit_label(base_units[0])} (presentaciones distintas)", False
 
-    cheapest = min(found, key=lambda pair: line_cost(pair[1]))
-    return cheapest[0], "precio pagado (presentaciones no comparables)"
+    cheapest = min(found, key=line_cost)
+    return cheapest.store_id, "precio pagado (presentaciones no comparables)", False
 
 
 def compare(
@@ -422,8 +425,8 @@ def compare(
     1. Arma la tabla ítem x tienda y marca la tienda más barata de cada ítem.
     2. Total por tienda: comprar toda la lista en una sola tienda (+ domicilio).
     3. Óptimo dividido: cada ítem en su tienda más barata (+ domicilio de cada tienda usada).
-    4. Ahorro frente a la tienda más costosa, usando solo los ítems que tienen todas las
-       tiendas, para no comparar totales con distinto número de productos.
+    4. Ahorro frente a la tienda más costosa, usando solo los ítems que todas las tiendas
+       tienen en la misma cantidad, para comparar lo mismo contra lo mismo.
     """
     active_stores = []
     for store_id in stores:
@@ -444,52 +447,73 @@ def compare(
             if selection is None:
                 selection = Selection(item, store_id, None, 0, "El agente no registró una selección.")
             row_selections[store_id] = selection
-        cheapest_store, compared_by = find_cheapest_store(row_selections)
-        rows.append(ItemRow(item, row_selections, cheapest_store, compared_by))
+        cheapest_store, compared_by, same_amount = find_cheapest_store(row_selections)
+        rows.append(ItemRow(item, row_selections, cheapest_store, compared_by, same_amount))
 
     not_found = []
     for row in rows:
         if row.cheapest_store is None:
             not_found.append(row.item)
 
-    # Ítems que encontraron todas las tiendas activas
+    # Una tienda que respondió pero no tiene nada de la lista no sirve para comparar ahorros.
+    compared_stores = []
+    stores_without_products = []
+    for store_id in active_stores:
+        has_products = False
+        for row in rows:
+            if row.selections[store_id].product is not None:
+                has_products = True
+        if has_products:
+            compared_stores.append(store_id)
+        else:
+            stores_without_products.append(store_id)
+
+    # Ítems comparables: los tienen todas las tiendas comparadas y en la misma cantidad.
     common_items = []
+    missing_somewhere = []
+    different_amounts = []
     for row in rows:
+        if row.cheapest_store is None:
+            continue
         found_everywhere = True
-        for store_id in active_stores:
+        for store_id in compared_stores:
             if row.selections[store_id].product is None:
                 found_everywhere = False
-        if found_everywhere and len(active_stores) > 0:
+        if not found_everywhere:
+            missing_somewhere.append(row.item)
+        elif len(compared_stores) > 1 and not row.same_amount:
+            different_amounts.append(row.item)
+        else:
             common_items.append(row.item)
 
-    # 2. Total por tienda y total comparable (solo ítems comunes)
+    # 2. Total por tienda
     store_totals = {}
-    comparable_totals = {}
     for store_id in active_stores:
         subtotal = Decimal("0")
-        comparable_subtotal = Decimal("0")
         found_items = []
         missing_items = []
         for row in rows:
             selection = row.selections[store_id]
             if selection.product is None:
                 missing_items.append(row.item)
-                continue
-            found_items.append(row.item)
-            subtotal += line_cost(selection)
-            if row.item in common_items:
-                comparable_subtotal += line_cost(selection)
-
+            else:
+                found_items.append(row.item)
+                subtotal += line_cost(selection)
         # El domicilio solo se paga si se compra algo en esa tienda.
         delivery = Decimal("0")
         if len(found_items) > 0:
             delivery = delivery_costs.get(store_id, Decimal("0"))
         store_totals[store_id] = StoreTotal(store_id, subtotal, delivery, subtotal + delivery, found_items, missing_items)
 
-        comparable_delivery = Decimal("0")
-        if len(common_items) > 0:
-            comparable_delivery = delivery_costs.get(store_id, Decimal("0"))
-        comparable_totals[store_id] = comparable_subtotal + comparable_delivery
+    # Total comparable por tienda: solo los ítems comparables, más el domicilio.
+    comparable_totals = {}
+    if len(common_items) > 0:
+        for store_id in compared_stores:
+            comparable_total = delivery_costs.get(store_id, Decimal("0"))
+            for row in rows:
+                if row.item in common_items:
+                    comparable_total += line_cost(row.selections[store_id])
+            comparable_totals[store_id] = comparable_total
 
     # 3. Óptimo dividido
     split_plan = {}
@@ -520,18 +544,21 @@ def compare(
     split_total = split_subtotal + split_delivery
     split_comparable_total = split_comparable_subtotal + split_comparable_delivery
 
-    # 4. Ahorro (solo con ítems comunes, para comparar lo mismo contra lo mismo)
+    # 4. Ahorro (solo con los ítems comparables)
     cheapest_store = None
     most_expensive_store = None
     savings_single_store = Decimal("0")
     savings_split = Decimal("0")
-    if len(common_items) > 0 and len(active_stores) > 1:
-        cheapest_store = min(active_stores, key=lambda store_id: comparable_totals[store_id])
-        most_expensive_store = max(active_stores, key=lambda store_id: comparable_totals[store_id])
-        savings_single_store = comparable_totals[most_expensive_store] - comparable_totals[cheapest_store]
-        savings_split = comparable_totals[most_expensive_store] - split_comparable_total
+    if len(comparable_totals) > 1:
+        cheapest_store = min(compared_stores, key=lambda store_id: comparable_totals[store_id])
+        highest_store = max(compared_stores, key=lambda store_id: comparable_totals[store_id])
+        savings_single_store = comparable_totals[highest_store] - comparable_totals[cheapest_store]
+        # Puede salir negativo: con domicilios, dividir la compra a veces cuesta más.
+        savings_split = comparable_totals[highest_store] - split_comparable_total
+        if savings_single_store > 0:
+            most_expensive_store = highest_store
 
-    savings_note = build_savings_note(items, active_stores, common_items, not_found)
+    savings_note = build_savings_note(compared_stores, common_items, missing_somewhere, different_amounts)
 
     return ComparisonResult(
         city=city,
@@ -540,6 +567,8 @@ def compare(
         consulted_at=consulted_at,
         rows=rows,
         store_totals=store_totals,
+        compared_stores=compared_stores,
+        stores_without_products=stores_without_products,
         common_items=common_items,
         comparable_totals=comparable_totals,
         split_plan=split_plan,
@@ -558,22 +587,64 @@ def compare(
     )
 
 
-def build_savings_note(items: list[str], active_stores: list[str], common_items: list[str], not_found: list[str]) -> str:
-    """Explica sobre qué productos se calculó el ahorro, para no comparar totales distintos sin avisar."""
-    if len(active_stores) < 2:
-        return "Solo hay una tienda con resultados, así que no hay ahorro que calcular."
+def build_savings_note(
+    compared_stores: list[str],
+    common_items: list[str],
+    missing_somewhere: list[str],
+    different_amounts: list[str],
+) -> str:
+    """Explica con qué productos se calculó el ahorro, para no comparar totales distintos sin avisar."""
+    if len(compared_stores) < 2:
+        return "Solo una tienda tiene productos de la lista, así que no hay ahorro que calcular."
     if len(common_items) == 0:
-        return "Ningún producto está en todas las tiendas, así que el ahorro no se puede calcular de forma justa."
+        return "Ningún producto está en todas las tiendas en la misma cantidad, así que el ahorro no se puede calcular de forma justa."
+    if len(missing_somewhere) == 0 and len(different_amounts) == 0:
+        return f"La comparación es completa: todas las tiendas tienen los {len(common_items)} productos encontrados, en la misma cantidad."
 
-    found_somewhere = len(items) - len(not_found)
-    if len(common_items) == found_somewhere:
-        return f"Todas las tiendas tienen los {len(common_items)} productos encontrados; la comparación es completa."
+    if len(common_items) == 1:
+        note = "El ahorro se calcula solo con el único producto que todas las tiendas tienen en la misma cantidad."
+    else:
+        note = f"El ahorro se calcula solo con los {len(common_items)} productos que todas las tiendas tienen en la misma cantidad."
+    if len(missing_somewhere) > 0:
+        note += f" Quedan por fuera porque alguna tienda no los tiene: {', '.join(missing_somewhere)}."
+    if len(different_amounts) > 0:
+        note += f" Quedan por fuera porque se compran en cantidades distintas según la tienda: {', '.join(different_amounts)}."
+    return note
 
-    left_out = []
-    for item in items:
-        if item not in common_items and item not in not_found:
-            left_out.append(item)
-    return (
-        f"El ahorro se calcula solo con los {len(common_items)} productos que tienen todas las tiendas. "
-        f"Quedan por fuera porque alguna tienda no los tiene: {', '.join(left_out)}."
-    )
+
+def describe_savings(result: ComparisonResult, store_names: dict[str, str]) -> list[str]:
+    """Frases sobre el ahorro, con las cifras que lo explican. Las usan la app, el PDF, el CLI y el agente."""
+    if result.cheapest_store is None:
+        return [result.savings_note]
+
+    if len(result.common_items) == 1:
+        products_text = "En el producto comparable"
+    else:
+        products_text = f"En los {len(result.common_items)} productos comparables"
+    cheapest_name = store_names[result.cheapest_store]
+    cheapest_total = format_cop(result.comparable_totals[result.cheapest_store])
+
+    lines = []
+    if result.most_expensive_store is None:
+        lines.append(f"{products_text}, todas las tiendas cuestan lo mismo: {cheapest_total}.")
+    else:
+        expensive_name = store_names[result.most_expensive_store]
+        expensive_total = format_cop(result.comparable_totals[result.most_expensive_store])
+        lines.append(
+            f"{products_text}, {cheapest_name} suma {cheapest_total} y {expensive_name} {expensive_total}: "
+            f"comprando en {cheapest_name} ahorras {format_cop(result.savings_single_store)}."
+        )
+
+    # Dividir solo conviene si sale más barato que comprar todo en la tienda más barata.
+    split_total = format_cop(result.split_comparable_total)
+    extra_savings = result.comparable_totals[result.cheapest_store] - result.split_comparable_total
+    if extra_savings > 0:
+        lines.append(
+            f"Dividiendo la compra, esos productos suman {split_total}: ahorras {format_cop(result.savings_split)} "
+            f"frente a la tienda más costosa, {format_cop(extra_savings)} más que comprando todo en {cheapest_name}."
+        )
+    else:
+        lines.append(f"Dividir la compra no mejora a comprar todo en {cheapest_name}: esos productos suman {split_total} (domicilios incluidos).")
+
+    lines.append(result.savings_note)
+    return lines
