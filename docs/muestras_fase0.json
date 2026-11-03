@@ -1,0 +1,4598 @@
+{
+ "_nota": "Respuestas reales de Intelligent Search con la región de Medellín, consultadas el 2026-11-02 en la Fase 0. Recortadas a los campos que usa CanastAI. Incluyen a propósito casos raros (marketplace con seller 1 a precio 0, PUM invertido o errado).",
+ "tiendas": {
+  "exito": {
+   "arroz": [
+    {
+     "productId": "130605",
+     "productName": "Arroz DIANA blanco premium (1000  gr)",
+     "brand": "DIANA",
+     "link": "https://www.exito.com/arroz-premium-1000-gr-130605/p",
+     "linkText": "arroz-premium-1000-gr-130605",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "1000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "730954",
+       "name": "Arroz DIANA blanco premium (1000  gr)",
+       "nameComplete": "Arroz DIANA blanco premium (1000  gr)",
+       "ean": "7702511000427",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 5616,
+          "ListPrice": 6240,
+          "PriceWithoutDiscount": 6240,
+          "spotPrice": 5616,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3064258",
+     "productName": "Arroz EXITO MARCA PROPIA blanco (5000  gr)",
+     "brand": "EXITO MARCA PROPIA",
+     "link": "https://www.exito.com/arroz-blanco-exito-marca-propia-5000-gr-3064258/p",
+     "linkText": "arroz-blanco-exito-marca-propia-5000-gr-3064258",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "5000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3181780",
+       "name": "Arroz EXITO MARCA PROPIA blanco (5000  gr)",
+       "nameComplete": "Arroz EXITO MARCA PROPIA blanco (5000  gr)",
+       "ean": "7701001900063",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 16300,
+          "ListPrice": 16300,
+          "PriceWithoutDiscount": 16300,
+          "spotPrice": 16300,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "878679",
+     "productName": "Arroz DIANA blanco vitamor (3000  gr)",
+     "brand": "DIANA",
+     "link": "https://www.exito.com/arroz-blanco-bolsa-x-3000g-878679/p",
+     "linkText": "arroz-blanco-bolsa-x-3000g-878679",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "3000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "130407",
+       "name": "Arroz DIANA blanco vitamor (3000  gr)",
+       "nameComplete": "Arroz DIANA blanco vitamor (3000  gr)",
+       "ean": "7702511000038",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 12900,
+          "ListPrice": 12900,
+          "PriceWithoutDiscount": 12900,
+          "spotPrice": 12900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "498671",
+     "productName": "Arroz DIANA blanco vitamor (5000  gr)",
+     "brand": "DIANA",
+     "link": "https://www.exito.com/arroz-diana-5000-gr-498671/p",
+     "linkText": "arroz-diana-5000-gr-498671",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "5000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "814670",
+       "name": "Arroz DIANA blanco vitamor (5000  gr)",
+       "nameComplete": "Arroz DIANA blanco vitamor (5000  gr)",
+       "ean": "7702511000045",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19647,
+          "ListPrice": 21830,
+          "PriceWithoutDiscount": 21830,
+          "spotPrice": 19647,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "477380",
+     "productName": "Arroz ROA blanco fortiplus (5000  gr)",
+     "brand": "ROA",
+     "link": "https://www.exito.com/arroz-fortificado-roa-bolsa-x-5000g-477380/p",
+     "linkText": "arroz-fortificado-roa-bolsa-x-5000g-477380",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "5000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "722262",
+       "name": "Arroz ROA blanco fortiplus (5000  gr)",
+       "nameComplete": "Arroz ROA blanco fortiplus (5000  gr)",
+       "ean": "7702552000516",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 20600,
+          "ListPrice": 20600,
+          "PriceWithoutDiscount": 20600,
+          "spotPrice": 20600,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "216877",
+     "productName": "Arroz DIANA blanco premium (2500  gr)",
+     "brand": "DIANA",
+     "link": "https://www.exito.com/arroz-premium-2500-gr-216877/p",
+     "linkText": "arroz-premium-2500-gr-216877",
+     "categories": [
+      "/Mercado/Despensa/Granos y arroz/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "2500"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "587016",
+       "name": "Arroz DIANA blanco premium (2500  gr)",
+       "nameComplete": "Arroz DIANA blanco premium (2500  gr)",
+       "ean": "7702511000748",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 14445,
+          "ListPrice": 16050,
+          "PriceWithoutDiscount": 16050,
+          "spotPrice": 14445,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "leche": [
+    {
+     "productId": "3225369",
+     "productName": "Leche FRESCAMPO entera UHT maxilitro paquete (6600  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/leche-frescampo-uht-entera-6600-ml-3225369/p",
+     "linkText": "leche-frescampo-uht-entera-6600-ml-3225369",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "6600"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3750918",
+       "name": "Leche FRESCAMPO entera UHT maxilitro paquete (6600  ml)",
+       "nameComplete": "Leche FRESCAMPO entera UHT maxilitro paquete (6600  ml)",
+       "ean": "7701002106655",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 22620,
+          "ListPrice": 22620,
+          "PriceWithoutDiscount": 22620,
+          "spotPrice": 22620,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3225371",
+     "productName": "Leche FRESCAMPO entera UHT paquete (5400  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/leche-frescampo-uht-entera-5400-ml-3225371/p",
+     "linkText": "leche-frescampo-uht-entera-5400-ml-3225371",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "5400"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3750920",
+       "name": "Leche FRESCAMPO entera UHT paquete (5400  ml)",
+       "nameComplete": "Leche FRESCAMPO entera UHT paquete (5400  ml)",
+       "ean": "7701002082065",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 18540,
+          "ListPrice": 18540,
+          "PriceWithoutDiscount": 18540,
+          "spotPrice": 18540,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3188875",
+     "productName": "Leche sabor original ALQUERIA pack x 6 unds (6000  ml)",
+     "brand": "ALQUERIA",
+     "link": "https://www.exito.com/leche-alqueria-semidescremada-original-sixpack-6000-ml-3188875/p",
+     "linkText": "leche-alqueria-semidescremada-original-sixpack-6000-ml-3188875",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "6000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3616199",
+       "name": "Leche sabor original ALQUERIA pack x 6 unds (6000  ml)",
+       "nameComplete": "Leche sabor original ALQUERIA pack x 6 unds (6000  ml)",
+       "ean": "7702177024409",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 33650,
+          "ListPrice": 33650,
+          "PriceWithoutDiscount": 33650,
+          "spotPrice": 33650,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3225370",
+     "productName": "Leche FRESCAMPO entera UHT bolsa maxilitro (1100  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/leche-frescampo-uht-entera-1100-ml-3225370/p",
+     "linkText": "leche-frescampo-uht-entera-1100-ml-3225370",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "1100"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3750919",
+       "name": "Leche FRESCAMPO entera UHT bolsa maxilitro (1100  ml)",
+       "nameComplete": "Leche FRESCAMPO entera UHT bolsa maxilitro (1100  ml)",
+       "ean": "7701002106648",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 3770,
+          "ListPrice": 3770,
+          "PriceWithoutDiscount": 3770,
+          "spotPrice": 3770,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3243337",
+     "productName": "Leche en polvo FRESCAMPO entera (900  gr)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/leche-en-polvo-frescampo-entera-900-gr-3243337/p",
+     "linkText": "leche-en-polvo-frescampo-entera-900-gr-3243337",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leches en polvo/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3814602",
+       "name": "Leche en polvo FRESCAMPO entera (900  gr)",
+       "nameComplete": "Leche en polvo FRESCAMPO entera (900  gr)",
+       "ean": "7701002111970",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 18810,
+          "ListPrice": 18810,
+          "PriceWithoutDiscount": 18810,
+          "spotPrice": 18810,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3225372",
+     "productName": "Leche FRESCAMPO entera UHT bolsa (900  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/leche-frescampo-uht-entera-900-ml-3225372/p",
+     "linkText": "leche-frescampo-uht-entera-900-ml-3225372",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3750921",
+       "name": "Leche FRESCAMPO entera UHT bolsa (900  ml)",
+       "nameComplete": "Leche FRESCAMPO entera UHT bolsa (900  ml)",
+       "ean": "7701002082058",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 3090,
+          "ListPrice": 3090,
+          "PriceWithoutDiscount": 3090,
+          "spotPrice": 3090,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "huevos": [
+    {
+     "productId": "744836",
+     "productName": "Huevos AA KIKES Rojo Pet (30  und)",
+     "brand": "KIKES",
+     "link": "https://www.exito.com/huevo-aa-rojo-30und-pet-744836/p",
+     "linkText": "huevo-aa-rojo-30und-pet-744836",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1037843",
+       "name": "Huevos AA KIKES Rojo Pet (30  und)",
+       "nameComplete": "Huevos AA KIKES Rojo Pet (30  und)",
+       "ean": "7707304621100",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 18375,
+          "ListPrice": 24500,
+          "PriceWithoutDiscount": 24500,
+          "spotPrice": 18375,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "662450",
+     "productName": "Huevos AA SMN rojo (30  und)..",
+     "brand": "SMN",
+     "link": "https://www.exito.com/aa-rojo-de-30-amarr-avicola-triple-a-30-und-662450/p",
+     "linkText": "aa-rojo-de-30-amarr-avicola-triple-a-30-und-662450",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "429693",
+       "name": "Huevos AA SMN rojo (30  und)",
+       "nameComplete": "Huevos AA SMN rojo (30  und).. Huevos AA SMN rojo (30  und)",
+       "ean": "7703039003075",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 17500,
+          "ListPrice": 17500,
+          "PriceWithoutDiscount": 17500,
+          "spotPrice": 17500,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "742696",
+     "productName": "Huevos A SMN rojo (30  und)",
+     "brand": "SMN",
+     "link": "https://www.exito.com/huevo-rojo-a-x-30-insuperable-742696/p",
+     "linkText": "huevo-rojo-a-x-30-insuperable-742696",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1032680",
+       "name": "Huevos A SMN rojo (30  und)",
+       "nameComplete": "Huevos A SMN rojo (30  und)",
+       "ean": "7703039403257",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 14490,
+          "ListPrice": 14490,
+          "PriceWithoutDiscount": 14490,
+          "spotPrice": 14490,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "895234",
+     "productName": "Huevos AAA KIKES rojo pet (15  und)",
+     "brand": "KIKES",
+     "link": "https://www.exito.com/huevo-rojo-aaa-15und-pet-895234/p",
+     "linkText": "huevo-rojo-aaa-15und-pet-895234",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "15"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1232624",
+       "name": "Huevos AAA KIKES rojo pet (15  und)",
+       "nameComplete": "Huevos AAA KIKES rojo pet (15  und)",
+       "ean": "7707304621384",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 14700,
+          "ListPrice": 14700,
+          "PriceWithoutDiscount": 14700,
+          "spotPrice": 14700,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3184726",
+     "productName": "Huevos AA NAPOLES libre jaula (1  und)",
+     "brand": "NAPOLES",
+     "link": "https://www.exito.com/huevo-subasta-libre-jaula-1-und-3184726/p",
+     "linkText": "huevo-subasta-libre-jaula-1-und-3184726",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3598388",
+       "name": "Huevos AA NAPOLES libre jaula (1  und)",
+       "nameComplete": "Huevos AA NAPOLES libre jaula (1  und)",
+       "ean": "7700624419136",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 22900,
+          "ListPrice": 22900,
+          "PriceWithoutDiscount": 22900,
+          "spotPrice": 22900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3031664",
+     "productName": "Huevos AAA PROMOCION blanco (30  und)",
+     "brand": "PROMOCION",
+     "link": "https://www.exito.com/huevo-blanco-aaa-x-30-promocion-30-und-3031664/p",
+     "linkText": "huevo-blanco-aaa-x-30-promocion-30-und-3031664",
+     "categories": [
+      "/Mercado/Lácteos, huevos y refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3068858",
+       "name": "Huevos AAA PROMOCION blanco (30  und)",
+       "nameComplete": "Huevos AAA PROMOCION blanco (30  und)",
+       "ean": "7703910504011",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 20500,
+          "ListPrice": 20500,
+          "PriceWithoutDiscount": 20500,
+          "spotPrice": 20500,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "aceite": [
+    {
+     "productId": "3082931",
+     "productName": "Aceite FRESCAMPO vegetal multiusos (3000  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/aceite-vegetal-frescampo-3000-ml-3082931/p",
+     "linkText": "aceite-vegetal-frescampo-3000-ml-3082931",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "3000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3257073",
+       "name": "Aceite FRESCAMPO vegetal multiusos (3000  ml)",
+       "nameComplete": "Aceite FRESCAMPO vegetal multiusos (3000  ml)",
+       "ean": "7701001900162",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19950,
+          "ListPrice": 19950,
+          "PriceWithoutDiscount": 19950,
+          "spotPrice": 19950,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3126826",
+     "productName": "Aceite de girasol FRESCAMPO botella (2000  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/aceite-de-girasol-frescampo-2000-ml-3126826/p",
+     "linkText": "aceite-de-girasol-frescampo-2000-ml-3126826",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "2000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3400653",
+       "name": "Aceite de girasol FRESCAMPO botella (2000  ml)",
+       "nameComplete": "Aceite de girasol FRESCAMPO botella (2000  ml)",
+       "ean": "7701001970837",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 16990,
+          "ListPrice": 16990,
+          "PriceWithoutDiscount": 16990,
+          "spotPrice": 16990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3082930",
+     "productName": "Aceite FRESCAMPO vegetal multiusos (900  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/aceite-vegetal-frescampo-900-ml-3082930/p",
+     "linkText": "aceite-vegetal-frescampo-900-ml-3082930",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3257072",
+       "name": "Aceite FRESCAMPO vegetal multiusos (900  ml)",
+       "nameComplete": "Aceite FRESCAMPO vegetal multiusos (900  ml)",
+       "ean": "7701001900179",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 6750,
+          "ListPrice": 6810,
+          "PriceWithoutDiscount": 6750,
+          "spotPrice": 6750,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3139678",
+     "productName": "Aceite de girasol PREMIER multiusos (1800  ml)",
+     "brand": "PREMIER",
+     "link": "https://www.exito.com/aceite-comestible-girasol-premier-1800-ml-3139678/p",
+     "linkText": "aceite-comestible-girasol-premier-1800-ml-3139678",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "1800"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3452377",
+       "name": "Aceite de girasol PREMIER multiusos (1800  ml)",
+       "nameComplete": "Aceite de girasol PREMIER multiusos (1800  ml)",
+       "ean": "7701018076423",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 25877,
+          "ListPrice": 37100,
+          "PriceWithoutDiscount": 37100,
+          "spotPrice": 25877,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3125555",
+     "productName": "Aceite FRESCAMPO vegetal multiusos (2000  ml)",
+     "brand": "FRESCAMPO",
+     "link": "https://www.exito.com/aceite-vegetal-frescampo-2000-ml-3125555/p",
+     "linkText": "aceite-vegetal-frescampo-2000-ml-3125555",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "2000"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3394671",
+       "name": "Aceite FRESCAMPO vegetal multiusos (2000  ml)",
+       "nameComplete": "Aceite FRESCAMPO vegetal multiusos (2000  ml)",
+       "ean": "7701001966458",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 13990,
+          "ListPrice": 13990,
+          "PriceWithoutDiscount": 13990,
+          "spotPrice": 13990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "3069123",
+     "productName": "Aceite GOURMET multiusos con omega 3 (900  ml)",
+     "brand": "GOURMET",
+     "link": "https://www.exito.com/aceite-familia-multiusos-gourmet-900-ml-3069123/p",
+     "linkText": "aceite-familia-multiusos-gourmet-900-ml-3069123",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Éxito"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "3202788",
+       "name": "Aceite GOURMET multiusos con omega 3 (900  ml)",
+       "nameComplete": "Aceite GOURMET multiusos con omega 3 (900  ml)",
+       "ean": "7702141966568",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 15624,
+          "ListPrice": 24000,
+          "PriceWithoutDiscount": 24000,
+          "spotPrice": 15624,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "105107939",
+     "productName": "Aceite De Coco Orgánico Extravirgen Prensado En Frío X 1.000 Ml Psa 0005064 2024",
+     "brand": "PURO COCO",
+     "link": "https://www.exito.com/aceite-de-coco-organico-extravirgen-prensado-en-frio-x-1000-ml-psa-0005064-2024-105107939-mp/p",
+     "linkText": "aceite-de-coco-organico-extravirgen-prensado-en-frio-x-1000-ml-psa-0005064-2024-105107939-mp",
+     "categories": [
+      "/Mercado/Despensa/Aceites y vinagres/"
+     ],
+     "properties": [
+      {
+       "name": "Factor Neto PUM",
+       "originalName": "Factor Neto PUM",
+       "values": [
+        "1,0"
+       ]
+      },
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Otros vendedores"
+       ]
+      },
+      {
+       "name": "Unidad de Medida PUM Calculado",
+       "originalName": "Unidad de Medida PUM Calculado",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "105107939",
+       "name": "Aceite De Coco Orgánico Extravirgen Prensado En Frío X 1.000 Ml Psa 0005064 2024",
+       "nameComplete": "Aceite De Coco Orgánico Extravirgen Prensado En Frío X 1.000 Ml Psa 0005064 2024",
+       "ean": "IZ20001368707",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "exito",
+         "sellerDefault": false,
+         "commertialOffer": {
+          "Price": 0,
+          "ListPrice": 0,
+          "PriceWithoutDiscount": 0,
+          "spotPrice": 0,
+          "AvailableQuantity": 0
+         }
+        },
+        {
+         "sellerId": "16380",
+         "sellerName": "tu elección ideal",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 89900,
+          "ListPrice": 89900,
+          "PriceWithoutDiscount": 89900,
+          "spotPrice": 89900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "jumbo": {
+   "arroz": [
+    {
+     "productId": "13396",
+     "productName": "Arroz Diana blanco x5kg",
+     "brand": "DIANA",
+     "link": "/arroz-diana-x-5-kg/p",
+     "linkText": "arroz-diana-x-5-kg",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "13396",
+       "name": "Arroz Diana blanco x5kg",
+       "nameComplete": "Arroz Diana blanco x5kg",
+       "ean": "7702511000045",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 18490,
+          "ListPrice": 24290,
+          "PriceWithoutDiscount": 24290,
+          "spotPrice": 18490,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "13395",
+     "productName": "Arroz Diana blanco x3kg",
+     "brand": "DIANA",
+     "link": "/arroz-diana-x-3-kg/p",
+     "linkText": "arroz-diana-x-3-kg",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "13395",
+       "name": "Arroz Diana blanco x3kg",
+       "nameComplete": "Arroz Diana blanco x3kg",
+       "ean": "7702511000038",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 13450,
+          "ListPrice": 13450,
+          "PriceWithoutDiscount": 13450,
+          "spotPrice": 13450,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "13412",
+     "productName": "Arroz Diana Premium blanco x4000g",
+     "brand": "DIANA",
+     "link": "/arroz-diana-premium-x-4000-g/p",
+     "linkText": "arroz-diana-premium-x-4000-g",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "13412",
+       "name": "Arroz Diana Premium blanco x4000g",
+       "nameComplete": "Arroz Diana Premium blanco x4000g",
+       "ean": "7702511000991",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 24740,
+          "ListPrice": 24740,
+          "PriceWithoutDiscount": 24740,
+          "spotPrice": 24740,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "13397",
+     "productName": "Arroz Diana blanco x10kg",
+     "brand": "DIANA",
+     "link": "/arroz-diana-x-10-kg/p",
+     "linkText": "arroz-diana-x-10-kg",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "Contenido Neto",
+       "originalName": "Contenido Neto",
+       "values": [
+        "10 kg"
+       ]
+      },
+      {
+       "name": "Peso del Producto",
+       "originalName": "Peso del Producto",
+       "values": [
+        "10 kg"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "13397",
+       "name": "Arroz Diana blanco x10kg",
+       "nameComplete": "Arroz Diana blanco x10kg",
+       "ean": "7702511000205",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 36890,
+          "ListPrice": 43990,
+          "PriceWithoutDiscount": 43990,
+          "spotPrice": 36890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "22039",
+     "productName": "Arroz Castellano Premium blanco x2.5kg",
+     "brand": "CASTELLANO",
+     "link": "/arroz-castellano-x-2-5-kg/p",
+     "linkText": "arroz-castellano-x-2-5-kg",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "22039",
+       "name": "Arroz Castellano Premium blanco x2.5kg",
+       "nameComplete": "Arroz Castellano Premium blanco x2.5kg",
+       "ean": "7702206010908",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 21080,
+          "ListPrice": 26350,
+          "PriceWithoutDiscount": 26350,
+          "spotPrice": 21080,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "13410",
+     "productName": "Arroz Diana Premium blanco x2.5kg",
+     "brand": "DIANA",
+     "link": "/arroz-diana-premium-x-2-5-kg/p",
+     "linkText": "arroz-diana-premium-x-2-5-kg",
+     "categories": [
+      "/Supermercado/Despensa/Arroz Y Granos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "13410",
+       "name": "Arroz Diana Premium blanco x2.5kg",
+       "nameComplete": "Arroz Diana Premium blanco x2.5kg",
+       "ean": "7702511000748",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 16050,
+          "ListPrice": 16050,
+          "PriceWithoutDiscount": 16050,
+          "spotPrice": 16050,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "leche": [
+    {
+     "productId": "362666",
+     "productName": "Leche Deslactosada Alqueria 1L x6unds",
+     "brand": "ALQUERIA",
+     "link": "/leche-deslactosada-alqueria-1l-x6unds-3673072/p",
+     "linkText": "leche-deslactosada-alqueria-1l-x6unds-3673072",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "362666",
+       "name": "Leche Deslactosada Alqueria 1L x6unds",
+       "nameComplete": "Leche Deslactosada Alqueria 1L x6unds",
+       "ean": "7702177024034",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 26890,
+          "ListPrice": 33650,
+          "PriceWithoutDiscount": 33650,
+          "spotPrice": 26890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "206584",
+     "productName": "Leche Entera Colanta Bolsa x6 Und x1000ml",
+     "brand": "COLANTA",
+     "link": "/leche-entera-colanta-bolsa-x6-und-x1000ml-3509862/p",
+     "linkText": "leche-entera-colanta-bolsa-x6-und-x1000ml-3509862",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "206584",
+       "name": "Leche Entera Colanta Bolsa x6 Und x1000ml",
+       "nameComplete": "Leche Entera Colanta Bolsa x6 Und x1000ml",
+       "ean": "7702129004961",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 25990,
+          "ListPrice": 32600,
+          "PriceWithoutDiscount": 32600,
+          "spotPrice": 25990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "362659",
+     "productName": "Leche Sabor Original Alqueria 1L x6unds",
+     "brand": "ALQUERIA",
+     "link": "/leche-sabor-original-alqueria-1l-x6unds-3673065/p",
+     "linkText": "leche-sabor-original-alqueria-1l-x6unds-3673065",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "362659",
+       "name": "Leche Sabor Original Alqueria 1L x6unds",
+       "nameComplete": "Leche Sabor Original Alqueria 1L x6unds",
+       "ean": "7702177024409",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 26890,
+          "ListPrice": 33650,
+          "PriceWithoutDiscount": 33650,
+          "spotPrice": 26890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "206586",
+     "productName": "Leche Deslactosada Colanta Bolsa x6 Und x1000ml",
+     "brand": "COLANTA",
+     "link": "/leche-colanta-deslactosada-bol-uht-x6undx1000mlc-u/p",
+     "linkText": "leche-colanta-deslactosada-bol-uht-x6undx1000mlc-u",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "206586",
+       "name": "Leche deslactosada Colanta bolsa x6und x1000ml c-u",
+       "nameComplete": "Leche Deslactosada Colanta Bolsa x6 Und x1000ml Leche deslactosada Colanta bolsa x6und x1000ml c-u",
+       "ean": "7702129004985",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 25990,
+          "ListPrice": 30700,
+          "PriceWithoutDiscount": 30700,
+          "spotPrice": 25990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "23444",
+     "productName": "Leche Deslactosada Alpina Bolsa x6 Und x1100ml",
+     "brand": "ALPINA",
+     "link": "/leche-deslactosada-alpina-bolsa-x-6und-x-1100ml/p",
+     "linkText": "leche-deslactosada-alpina-bolsa-x-6und-x-1100ml",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "23444",
+       "name": "Leche deslactosada Alpina bolsa x6und x1100ml c-u",
+       "nameComplete": "Leche Deslactosada Alpina Bolsa x6 Und x1100ml Leche deslactosada Alpina bolsa x6und x1100ml c-u",
+       "ean": "7702001029716",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 39100,
+          "ListPrice": 39100,
+          "PriceWithoutDiscount": 39100,
+          "spotPrice": 39100,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "23477",
+     "productName": "Leche Entera Colanta Bolsa x6 Und x1100",
+     "brand": "COLANTA",
+     "link": "/leche-entera-colanta-bolsa-x6-und-x1100-0512081/p",
+     "linkText": "leche-entera-colanta-bolsa-x6-und-x1100-0512081",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Leche/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "23477",
+       "name": "Leche Entera Colanta Bolsa x6 Und x1100",
+       "nameComplete": "Leche Entera Colanta Bolsa x6 Und x1100",
+       "ean": "7702129003612",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 34690,
+          "ListPrice": 34690,
+          "PriceWithoutDiscount": 34690,
+          "spotPrice": 34690,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "huevos": [
+    {
+     "productId": "176577",
+     "productName": "Huevos AA rojos Gallina Feliz x42und",
+     "brand": "SANTA REYES",
+     "link": "/huevo-santa-resyes-gallina-feliz-aa-x42-und/p",
+     "linkText": "huevo-santa-resyes-gallina-feliz-aa-x42-und",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "176577",
+       "name": "Huevos AA rojos Gallina Feliz x42und",
+       "nameComplete": "Huevos AA rojos Gallina Feliz x42und",
+       "ean": "7702420406426",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 45400,
+          "ListPrice": 45400,
+          "PriceWithoutDiscount": 45400,
+          "spotPrice": 45400,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "23341",
+     "productName": "Huevos AA rojos Santa Reyes x30und",
+     "brand": "SANTA REYES",
+     "link": "/huevo-aa-rojo-x30-unidades-santa-reyes/p",
+     "linkText": "huevo-aa-rojo-x30-unidades-santa-reyes",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "23341",
+       "name": "Huevos AA rojos Santa Reyes x30und",
+       "nameComplete": "Huevos AA rojos Santa Reyes x30und",
+       "ean": "7702420910015",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 26700,
+          "ListPrice": 26700,
+          "PriceWithoutDiscount": 26700,
+          "spotPrice": 26700,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "23346",
+     "productName": "Huevos AA rojos Santa Anita x24und",
+     "brand": "SANTA ANITA",
+     "link": "/huevo-santa-anita-tradicional-aa-rojo-x-24-und/p",
+     "linkText": "huevo-santa-anita-tradicional-aa-rojo-x-24-und",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "23346",
+       "name": "Huevos AA rojos Santa Anita x24und",
+       "nameComplete": "Huevos AA rojos Santa Anita x24und",
+       "ean": "7706772100582",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19290,
+          "ListPrice": 19290,
+          "PriceWithoutDiscount": 19290,
+          "spotPrice": 19290,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "61658",
+     "productName": "Huevos Kikes rojos XL x15und",
+     "brand": "KIKES",
+     "link": "/huevos-kikes-rojo-aa-x-15-und/p",
+     "linkText": "huevos-kikes-rojo-aa-x-15-und",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "61658",
+       "name": "Huevos Kikes rojos XL x15und",
+       "nameComplete": "Huevos Kikes rojos XL x15und",
+       "ean": "7707304621384",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 13590,
+          "ListPrice": 13590,
+          "PriceWithoutDiscount": 13590,
+          "spotPrice": 13590,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "85232",
+     "productName": "Huevos AAA rojos Santa Anita x30und",
+     "brand": "SANTA ANITA",
+     "link": "/huevo-aaa-rojo--30-marca-blanca/p",
+     "linkText": "huevo-aaa-rojo--30-marca-blanca",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "85232",
+       "name": "Huevos AAA rojos Santa Anita x30und",
+       "nameComplete": "Huevos AAA rojos Santa Anita x30und",
+       "ean": "7706772101305",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 27390,
+          "ListPrice": 27390,
+          "PriceWithoutDiscount": 27390,
+          "spotPrice": 27390,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "23275",
+     "productName": "Campesino Termoencogido Oro Aa X30 Unidades",
+     "brand": "HUEVOS ORO",
+     "link": "/campesino-termoencogido-oro-aa-x30-unidades/p",
+     "linkText": "campesino-termoencogido-oro-aa-x30-unidades",
+     "categories": [
+      "/Supermercado/Lácteos, Huevos Y Refrigerados/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "Contenido Neto",
+       "originalName": "Contenido Neto",
+       "values": [
+        "2010 Gr"
+       ]
+      },
+      {
+       "name": "Cantidad",
+       "originalName": "Cantidad",
+       "values": [
+        "12"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "23275",
+       "name": "Campesino Termoencogido Oro Aa X30 Unidades",
+       "nameComplete": "Campesino Termoencogido Oro Aa X30 Unidades",
+       "ean": "7702349030375",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 23900,
+          "ListPrice": 23900,
+          "PriceWithoutDiscount": 23900,
+          "spotPrice": 23900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "20140717",
+     "productName": "Huevo Sorpresa con Plastilina de Colores para Niños",
+     "brand": "MORE PRODUCTS",
+     "link": "/huevo-sorpresa-con-plastilina-de-colores-para-niños-20140717/p",
+     "linkText": "huevo-sorpresa-con-plastilina-de-colores-para-niños-20140717",
+     "categories": [
+      "/Libros Y Papelería/Útiles Escolares/Pinturas Escolares Y Plastilinas/"
+     ],
+     "properties": [
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "20057330",
+       "name": "Huevo Sorpresa con Plastilina de Colores para Niños",
+       "nameComplete": "Huevo Sorpresa con Plastilina de Colores para Niños",
+       "ean": "",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": false,
+         "commertialOffer": {
+          "Price": 0,
+          "ListPrice": 0,
+          "PriceWithoutDiscount": 0,
+          "spotPrice": 0,
+          "AvailableQuantity": 0
+         }
+        },
+        {
+         "sellerId": "moreproducts",
+         "sellerName": "moreproducts",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 36900,
+          "ListPrice": 36900,
+          "PriceWithoutDiscount": 36900,
+          "spotPrice": 36900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "aceite": [
+    {
+     "productId": "330927",
+     "productName": "Aceite Cuisine&Co Mezcla Vegetal x3000Ml",
+     "brand": "CUISINE & CO NBE MP",
+     "link": "/aceite-cuisine-co-mezcla-vegetal-x3000ml/p",
+     "linkText": "aceite-cuisine-co-mezcla-vegetal-x3000ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "330927",
+       "name": "Aceite Cuisine&Co Mezcla Vegetal x3000Ml",
+       "nameComplete": "Aceite Cuisine&Co Mezcla Vegetal x3000Ml",
+       "ean": "7703616329383",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19890,
+          "ListPrice": 21890,
+          "PriceWithoutDiscount": 21890,
+          "spotPrice": 19890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "288561",
+     "productName": "Aceite Premier girasol x2700ml",
+     "brand": "PREMIER",
+     "link": "/aceite-premier-girasol-x2700ml/p",
+     "linkText": "aceite-premier-girasol-x2700ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "288561",
+       "name": "Aceite Premier girasol x2700ml",
+       "nameComplete": "Aceite Premier girasol x2700ml",
+       "ean": "7701018076430",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 37940,
+          "ListPrice": 54200,
+          "PriceWithoutDiscount": 54200,
+          "spotPrice": 37940,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "22333",
+     "productName": "Aceite Ybarra oliva extra virgen x3L",
+     "brand": "YBARRA",
+     "link": "/aceite-de-oliva-extra-virgen-ybarra-x-3-lt/p",
+     "linkText": "aceite-de-oliva-extra-virgen-ybarra-x-3-lt",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "22333",
+       "name": "Aceite Ybarra oliva extra virgen x3L",
+       "nameComplete": "Aceite Ybarra oliva extra virgen x3L",
+       "ean": "8410086205350",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 95590,
+          "ListPrice": 132990,
+          "PriceWithoutDiscount": 132990,
+          "spotPrice": 95590,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "330935",
+     "productName": "Aceite Cuisine&Co Girasol x3000Ml",
+     "brand": "CUISINE & CO NBE MP",
+     "link": "/aceite-cuisine-co-girasol-x3000ml/p",
+     "linkText": "aceite-cuisine-co-girasol-x3000ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "330935",
+       "name": "Aceite Cuisine&Co Girasol x3000Ml",
+       "nameComplete": "Aceite Cuisine&Co Girasol x3000Ml",
+       "ean": "7703616329345",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 27890,
+          "ListPrice": 28890,
+          "PriceWithoutDiscount": 28890,
+          "spotPrice": 27890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "22331",
+     "productName": "Aceite Ybarra oliva extra virgen x1L",
+     "brand": "YBARRA",
+     "link": "/aceite-de-oliva-extra-virgen-ybarra-x-1-lt/p",
+     "linkText": "aceite-de-oliva-extra-virgen-ybarra-x-1-lt",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "22331",
+       "name": "Aceite Ybarra oliva extra virgen x1L",
+       "nameComplete": "Aceite Ybarra oliva extra virgen x1L",
+       "ean": "8410086205145",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 47990,
+          "ListPrice": 47990,
+          "PriceWithoutDiscount": 47990,
+          "spotPrice": 47990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "229641",
+     "productName": "Aceite Gourmet Familia Multiusos x2600ml",
+     "brand": "GOURMET",
+     "link": "/aceite-gourmet-familia-multiusos-x2600ml/p",
+     "linkText": "aceite-gourmet-familia-multiusos-x2600ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceite/"
+     ],
+     "properties": [
+      {
+       "name": "Vendido por",
+       "originalName": "Vendido por",
+       "values": [
+        "Jumbo"
+       ]
+      },
+      {
+       "name": "Contenido Neto",
+       "originalName": "Contenido Neto",
+       "values": [
+        "2600 ml"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "229641",
+       "name": "Aceite Gourmet Familia Multiusos x2600ml",
+       "nameComplete": "Aceite Gourmet Familia Multiusos x2600ml",
+       "ean": "7702141986054",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Cencosud - Colombia",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 46340,
+          "ListPrice": 66200,
+          "PriceWithoutDiscount": 66200,
+          "spotPrice": 46340,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "olimpica": {
+   "arroz": [
+    {
+     "productId": "2000025",
+     "productName": "Arroz Sabrosón 5 Kg",
+     "brand": "Sabroson",
+     "link": "/arroz-sabroson-5-kg-7707105805105-2000025/p",
+     "linkText": "arroz-sabroson-5-kg-7707105805105-2000025",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "5000"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2000025",
+       "name": "ARROZ SABROSON 5 KG",
+       "nameComplete": "Arroz Sabrosón 5 Kg ARROZ SABROSON 5 KG",
+       "ean": "7707105805105",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 20990,
+          "ListPrice": 20990,
+          "PriceWithoutDiscount": 20990,
+          "spotPrice": 20990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "566554",
+     "productName": "Arroz Diana 5 Kg",
+     "brand": "Diana",
+     "link": "/arroz-diana-5-kg-7702511000045-566554/p",
+     "linkText": "arroz-diana-5-kg-7702511000045-566554",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "5000"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "566554",
+       "name": "ARROZ DIANA 5 kg",
+       "nameComplete": "ARROZ DIANA 5 kg",
+       "ean": "7702511000045",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 21950,
+          "ListPrice": 21950,
+          "PriceWithoutDiscount": 21950,
+          "spotPrice": 21950,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2000024",
+     "productName": "Arroz Sabrosón 3 Kg",
+     "brand": "Sabroson",
+     "link": "/arroz-sabroson-3-kg-7707105805068-2000024/p",
+     "linkText": "arroz-sabroson-3-kg-7707105805068-2000024",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "3000"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2000024",
+       "name": "ARROZ SABROSON 3 KG",
+       "nameComplete": "Arroz Sabrosón 3 Kg ARROZ SABROSON 3 KG",
+       "ean": "7707105805068",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 11990,
+          "ListPrice": 11990,
+          "PriceWithoutDiscount": 11990,
+          "spotPrice": 11990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "518233",
+     "productName": "Arroz Diana 3 Kg",
+     "brand": "Diana",
+     "link": "/arroz-diana-3-kg-7702511000038-518233/p",
+     "linkText": "arroz-diana-3-kg-7702511000038-518233",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "3000"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "518233",
+       "name": "ARROZ DIANA 3 KG",
+       "nameComplete": "ARROZ DIANA 3 KG",
+       "ean": "7702511000038",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 13100,
+          "ListPrice": 13100,
+          "PriceWithoutDiscount": 13100,
+          "spotPrice": 13100,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2327554",
+     "productName": "ARROZ OLIMPICA 2500 G",
+     "brand": "Olimpica",
+     "link": "/arroz-olimpica-2500-g/p",
+     "linkText": "arroz-olimpica-2500-g",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "2500"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2327554",
+       "name": "ARROZ OLIMPICA 2500 G",
+       "nameComplete": "ARROZ OLIMPICA 2500 G",
+       "ean": "7707105817054",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 7990,
+          "ListPrice": 8990,
+          "PriceWithoutDiscount": 8990,
+          "spotPrice": 7990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2317851",
+     "productName": "Arroz Diana Paca 12,5 Kg X25 Unds",
+     "brand": "Diana",
+     "link": "/arroz-diana-paca-25-und-12-500-g/p",
+     "linkText": "arroz-diana-paca-25-und-12-500-g",
+     "categories": [
+      "/Supermercado/Despensa/Arroces Empacados Y Granel/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Gramo"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "12500"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Gramos"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2317851",
+       "name": "ARROZ DIANA PACA 25 UND 12.500 G",
+       "nameComplete": "Arroz Diana Paca 12,5 Kg X25 Unds ARROZ DIANA PACA 25 UND 12.500 G",
+       "ean": "7702511000052",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 49990,
+          "ListPrice": 49990,
+          "PriceWithoutDiscount": 49990,
+          "spotPrice": 49990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "leche": [
+    {
+     "productId": "2225870",
+     "productName": "LECHE UHT OLIMPICA ENT BSA 800ML X6",
+     "brand": "Olimpica",
+     "link": "/leche-uht-olimpica-ent-bsa-800ml-x6/p",
+     "linkText": "leche-uht-olimpica-ent-bsa-800ml-x6",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "4800"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2225870",
+       "name": "LECHE UHT OLIMPICA ENT BSA 800ML X6",
+       "nameComplete": "LECHE UHT OLIMPICA ENT BSA 800ML X6",
+       "ean": "7701008838796",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19490,
+          "ListPrice": 19490,
+          "PriceWithoutDiscount": 19490,
+          "spotPrice": 19490,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2124164",
+     "productName": "Leche Medalla de Oro Uht Entera 900 Ml X6 Unds",
+     "brand": "Medalla De Oro",
+     "link": "/leche-uht-medalla-oro-ent-900ml-x6un/p",
+     "linkText": "leche-uht-medalla-oro-ent-900ml-x6un",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "5400"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2124164",
+       "name": "LECHE UHT MEDALLA ORO ENT 900ML X6",
+       "nameComplete": "Leche Medalla de Oro Uht Entera 900 Ml X6 Unds LECHE UHT MEDALLA ORO ENT 900ML X6",
+       "ean": "7701008628281",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 20190,
+          "ListPrice": 20190,
+          "PriceWithoutDiscount": 20190,
+          "spotPrice": 20190,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1623329",
+     "productName": "Leche Colanta Uht Entera 1,1 Lt X6 Unds",
+     "brand": "Colanta",
+     "link": "/leche-uht-colanta-entera-11-l-x6-7702129003612-1623329/p",
+     "linkText": "leche-uht-colanta-entera-11-l-x6-7702129003612-1623329",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "6600"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1623329",
+       "name": "LECHE UHT COLANTA ENTERA 1.1 L X6",
+       "nameComplete": "Leche Colanta Uht Entera 1,1 Lt X6 Unds LECHE UHT COLANTA ENTERA 1.1 L X6",
+       "ean": "7702129003612",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 33900,
+          "ListPrice": 33900,
+          "PriceWithoutDiscount": 33900,
+          "spotPrice": 33900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2256647",
+     "productName": "Leche Colanta Uht Entera 1000 Ml X6 Unds",
+     "brand": "Colanta",
+     "link": "/leche-uht-colanta-entera-1000ml-x6/p",
+     "linkText": "leche-uht-colanta-entera-1000ml-x6",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "6000"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2256647",
+       "name": "LECHE UHT COLANTA ENTERA 1000ML X6",
+       "nameComplete": "Leche Colanta Uht Entera 1000 Ml X6 Unds LECHE UHT COLANTA ENTERA 1000ML X6",
+       "ean": "7702129004961",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 32600,
+          "ListPrice": 32600,
+          "PriceWithoutDiscount": 32600,
+          "spotPrice": 32600,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2312885",
+     "productName": "Leche Alquería Original 1,1 Lt X6 Unds",
+     "brand": "Alqueria",
+     "link": "/leche-alqueria-original-1100ml-x-6un/p",
+     "linkText": "leche-alqueria-original-1100ml-x-6un",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "1100"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2312885",
+       "name": "Leche Sabor Original Alqueria 1.1L x6unds",
+       "nameComplete": "Leche Alquería Original 1,1 Lt X6 Unds Leche Sabor Original Alqueria 1.1L x6unds",
+       "ean": "7702177022542",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 37350,
+          "ListPrice": 37350,
+          "PriceWithoutDiscount": 37350,
+          "spotPrice": 37350,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2330107",
+     "productName": "Leche Medalla de Oro Entera 900 Ml",
+     "brand": "Medalla De Oro",
+     "link": "/leche-medalla-de-oro-entera-t-pack-900ml/p",
+     "linkText": "leche-medalla-de-oro-entera-t-pack-900ml",
+     "categories": [
+      "/Supermercado/Desayuno/Lácteos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2330107",
+       "name": "LECHE MEDALLA DE ORO ENTERA T/PACK 900ML",
+       "nameComplete": "Leche Medalla de Oro Entera 900 Ml LECHE MEDALLA DE ORO ENTERA T/PACK 900ML",
+       "ean": "7701008845275",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 3990,
+          "ListPrice": 3990,
+          "PriceWithoutDiscount": 3990,
+          "spotPrice": 3990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "huevos": [
+    {
+     "productId": "1353948",
+     "productName": "Huevo Kikes Rojo AA X30 Unds",
+     "brand": "Kikes",
+     "link": "/huevo-aa-rojo-pet-kikes-30un-7707304621100-1353948/p",
+     "linkText": "huevo-aa-rojo-pet-kikes-30un-7707304621100-1353948",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Unidades"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1353948",
+       "name": "HUEVO AA ROJO PET KIKES 30un",
+       "nameComplete": "Huevo Kikes Rojo AA X30 Unds HUEVO AA ROJO PET KIKES 30un",
+       "ean": "7707304621100",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 26890,
+          "ListPrice": 26890,
+          "PriceWithoutDiscount": 26890,
+          "spotPrice": 26890,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2136304",
+     "productName": "HUEVO AAA RJO PET X15 un KIKES",
+     "brand": "SIN MARCA 2",
+     "link": "/huevo-aaa-rjo-pet-x15-un-kikes/p",
+     "linkText": "huevo-aaa-rjo-pet-x15-un-kikes",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2136304",
+       "name": "HUEVO AAA RJO PET X15 un KIKES",
+       "nameComplete": "HUEVO AAA RJO PET X15 un KIKES",
+       "ean": "7707304621384",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 15990,
+          "ListPrice": 15990,
+          "PriceWithoutDiscount": 15990,
+          "spotPrice": 15990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "851093",
+     "productName": "Huevo Santa Anita Rojo A X30 Unds",
+     "brand": "Santa Anita",
+     "link": "/huevo-santa-anita-a-rojo-30-und-panal-7706772301071-851093/p",
+     "linkText": "huevo-santa-anita-a-rojo-30-und-panal-7706772301071-851093",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Unidades"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "851093",
+       "name": "HUEVO SANTA ANITA A ROJO 30 UND PANAL",
+       "nameComplete": "Huevo Santa Anita Rojo A X30 Unds HUEVO SANTA ANITA A ROJO 30 UND PANAL",
+       "ean": "7706772301071",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 15900,
+          "ListPrice": 15900,
+          "PriceWithoutDiscount": 15900,
+          "spotPrice": 15900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1921715",
+     "productName": "Huevo Santa Reyes Rojo AA X30 Unds",
+     "brand": "Santa Reyes",
+     "link": "/huevo-aa-rojo-vinipel-30-un-7702420910015/p",
+     "linkText": "huevo-aa-rojo-vinipel-30-un-7702420910015",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Unidades"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1921715",
+       "name": "HUEVO AA ROJO VINIPEL 30 un",
+       "nameComplete": "Huevo Santa Reyes Rojo AA X30 Unds HUEVO AA ROJO VINIPEL 30 un",
+       "ean": "7702420910015",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 28490,
+          "ListPrice": 28490,
+          "PriceWithoutDiscount": 28490,
+          "spotPrice": 28490,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2037326",
+     "productName": "Huevo Nápoles Rojo AA X30 Unds",
+     "brand": "Napoles",
+     "link": "/huevo-napoles-aar-x30-vitafilado-7700624102038-2037326/p",
+     "linkText": "huevo-napoles-aar-x30-vitafilado-7700624102038-2037326",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Unidad"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "30"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Unidades"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2037326",
+       "name": "HUEVO NAPOLES AAR X30 VITAFILADO",
+       "nameComplete": "Huevo Nápoles Rojo AA X30 Unds HUEVO NAPOLES AAR X30 VITAFILADO",
+       "ean": "7700624102038",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 26290,
+          "ListPrice": 26290,
+          "PriceWithoutDiscount": 26290,
+          "spotPrice": 26290,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1002233761",
+     "productName": "Huevo Kosher Nutriavicola X30 Unds",
+     "brand": "Kosher",
+     "link": "/huevo-koshe-x30-un-vitafil-7702349945822-2147330/p",
+     "linkText": "huevo-koshe-x30-un-vitafil-7702349945822-2147330",
+     "categories": [
+      "/Supermercado/Desayuno/Huevos/"
+     ],
+     "properties": [
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2147330",
+       "name": "HUEVO KOSHE X30 UN VITAFIL",
+       "nameComplete": "Huevo Kosher Nutriavicola X30 Unds HUEVO KOSHE X30 UN VITAFIL",
+       "ean": "7702349945822",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 27990,
+          "ListPrice": 27990,
+          "PriceWithoutDiscount": 27990,
+          "spotPrice": 27990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1002386452",
+     "productName": "Huevo Sorpresa Dinosaurio Squishy Jurassic World -Azul-11cm",
+     "brand": "Jurassic World",
+     "link": "/huevo-sorpresa-dinosaurio-squishy-jurassic-world--azul-11cm-1002386452/p",
+     "linkText": "huevo-sorpresa-dinosaurio-squishy-jurassic-world--azul-11cm-1002386452",
+     "categories": [
+      "/Juguetería/Juguetes para Niños/Figuras de accion/"
+     ],
+     "properties": [
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1100211314",
+       "name": "Huevo Sorpresa Dinosaurio Squishy Jurassic World -Azul-11cm",
+       "nameComplete": "Huevo Sorpresa Dinosaurio Squishy Jurassic World -Azul-11cm",
+       "ean": "7702271641533",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": false,
+         "commertialOffer": {
+          "Price": 0,
+          "ListPrice": 0,
+          "PriceWithoutDiscount": 0,
+          "spotPrice": 0,
+          "AvailableQuantity": 0
+         }
+        },
+        {
+         "sellerId": "moreproducts",
+         "sellerName": "More Products",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 79900,
+          "ListPrice": 79900,
+          "PriceWithoutDiscount": 79900,
+          "spotPrice": 79900,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ],
+   "aceite": [
+    {
+     "productId": "1646719",
+     "productName": "Aceite Medalla de Oro Mezcla 3 Lt",
+     "brand": "Medalla De Oro",
+     "link": "/aceite-medalla-oro-mezcla-3-l/p",
+     "linkText": "aceite-medalla-oro-mezcla-3-l",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "3000"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "ml"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1646719",
+       "name": "ACEITE MEDALLA ORO MEZCLA 3 L",
+       "nameComplete": "Aceite Medalla de Oro Mezcla 3 Lt ACEITE MEDALLA ORO MEZCLA 3 L",
+       "ean": "7701008624894",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 19990,
+          "ListPrice": 19990,
+          "PriceWithoutDiscount": 19990,
+          "spotPrice": 19990,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2315088",
+     "productName": "Aceite Premier de Girasol 2700 Ml",
+     "brand": "Premier",
+     "link": "/aceite-premier-girasol-2700ml/p",
+     "linkText": "aceite-premier-girasol-2700ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "2700"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2315088",
+       "name": "ACEITE PREMIER GIRASOL 2700ML",
+       "nameComplete": "Aceite Premier de Girasol 2700 Ml ACEITE PREMIER GIRASOL 2700ML",
+       "ean": "7701018076430",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 62300,
+          "ListPrice": 62300,
+          "PriceWithoutDiscount": 62300,
+          "spotPrice": 62300,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1002231589",
+     "productName": "Aceite Diana Mezcla Vegetal Vitamina A/D 900 Ml",
+     "brand": "Diana-Aceite",
+     "link": "/aceite-diana-mezcla-vegetal-vit-ayd-900ml-7702028000330-2209538/p",
+     "linkText": "aceite-diana-mezcla-vegetal-vit-ayd-900ml-7702028000330-2209538",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2209538",
+       "name": "ACEITE DIANA MEZCLA VEGETAL VIT AYD 900ML",
+       "nameComplete": "Aceite Diana Mezcla Vegetal Vitamina A/D 900 Ml ACEITE DIANA MEZCLA VEGETAL VIT AYD 900ML",
+       "ean": "7702028000330",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 8640,
+          "ListPrice": 10800,
+          "PriceWithoutDiscount": 10800,
+          "spotPrice": 8640,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2134354",
+     "productName": "Aceite Medalla de Oro de Oliva Extra Virgen 500 Ml Pet",
+     "brand": "Medalla De Oro",
+     "link": "/aceite-de-oliva-medalla-de-oro-500-ml-7701008626997--2134354/p",
+     "linkText": "aceite-de-oliva-medalla-de-oro-500-ml-7701008626997--2134354",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "500"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2134354",
+       "name": "ACEITE DE OLIVA MEDALLA DE ORO 500 ml",
+       "nameComplete": "Aceite Medalla de Oro de Oliva Extra Virgen 500 Ml Pet ACEITE DE OLIVA MEDALLA DE ORO 500 ml",
+       "ean": "7701008626997",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 16950,
+          "ListPrice": 16950,
+          "PriceWithoutDiscount": 16950,
+          "spotPrice": 16950,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "1646730",
+     "productName": "Aceite Medalla de Oro Mezcla 900 Ml",
+     "brand": "Medalla De Oro",
+     "link": "/aceite-medalla-oro-mezc-900-cm3/p",
+     "linkText": "aceite-medalla-oro-mezc-900-cm3",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "900"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "ml"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "1646730",
+       "name": "ACEITE MEDALLA ORO MEZC 900 cm3",
+       "nameComplete": "Aceite Medalla de Oro Mezcla 900 Ml ACEITE MEDALLA ORO MEZC 900 cm3",
+       "ean": "7701008624900",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 6750,
+          "ListPrice": 6750,
+          "PriceWithoutDiscount": 6750,
+          "spotPrice": 6750,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "productId": "2315087",
+     "productName": "Aceite Premier de Girasol 1800 Ml",
+     "brand": "Premier",
+     "link": "/aceite-premier-girasol-1800ml/p",
+     "linkText": "aceite-premier-girasol-1800ml",
+     "categories": [
+      "/Supermercado/Despensa/Aceites/"
+     ],
+     "properties": [
+      {
+       "name": "measurement_unit",
+       "originalName": "measurement_unit",
+       "values": [
+        "Mililitro"
+       ]
+      },
+      {
+       "name": "unit_multiplier",
+       "originalName": "unit_multiplier",
+       "values": [
+        "1800"
+       ]
+      },
+      {
+       "name": "measurement_unit_un",
+       "originalName": "measurement_unit_un",
+       "values": [
+        "Mililitros"
+       ]
+      },
+      {
+       "name": "unit_multiplier_un",
+       "originalName": "unit_multiplier_un",
+       "values": [
+        "1"
+       ]
+      },
+      {
+       "name": "sellerId",
+       "originalName": "sellerId",
+       "values": [
+        "1"
+       ]
+      }
+     ],
+     "items": [
+      {
+       "itemId": "2315087",
+       "name": "ACEITE PREMIER GIRASOL 1800ML",
+       "nameComplete": "Aceite Premier de Girasol 1800 Ml ACEITE PREMIER GIRASOL 1800ML",
+       "ean": "7701018076423",
+       "measurementUnit": "un",
+       "unitMultiplier": 1,
+       "sellers": [
+        {
+         "sellerId": "1",
+         "sellerName": "Olimpica",
+         "sellerDefault": true,
+         "commertialOffer": {
+          "Price": 40190,
+          "ListPrice": 40190,
+          "PriceWithoutDiscount": 40190,
+          "spotPrice": 40190,
+          "AvailableQuantity": 10000
+         }
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,11 @@
+# Entorno virtual y caché de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Secretos: nunca subir el .env real
+.env
+
+# PDFs generados al probar
+*.pdf

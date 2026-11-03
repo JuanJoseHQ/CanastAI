@@ -1,0 +1,46 @@
+# Configuración de CanastAI: tiendas, región y reglas de acceso.
+# Los detalles de cada endpoint y cómo se obtuvo cada valor están en docs/endpoints.md.
+
+city: Medellín
+
+# Reglas de acceso a las tiendas
+user_agent: "CanastAI/0.1 (proyecto academico de curso)"
+timeout_seconds: 15
+max_retries: 2                 # reintentos ante 429 o errores 5xx, con espera creciente
+max_concurrent_per_store: 2    # requests simultáneos como máximo por tienda
+results_per_search: 20         # productos que se piden a la tienda en cada búsqueda
+
+stores:
+  exito:
+    name: Éxito
+    domain: https://www.exito.com
+    # Intelligent Search de VTEX, limitado a la categoría Mercado. Sin "/" antes del "?".
+    search_path: /api/io/_v/api/intelligent-search/product_search/category-1/mercado
+    extra_params:
+      hideUnavailableItems: "true"
+    # Éxito responde 406 con el JSON correcto (ver docs/endpoints.md).
+    ok_status_codes: [200, 406]
+    # Tienda exitocol037 (Centro/Laureles). Para obtenerlo de nuevo:
+    # GET https://www.exito.com/api/sessionByCoords?geoCoordinates=-75.5812,6.2442&salesChannel=1
+    region_id: "U1cjZXhpdG9jb2wwMzc="
+
+  jumbo:
+    name: Jumbo
+    domain: https://www.jumbocolombia.com
+    search_path: /_v/api/intelligent-search/product_search/
+    extra_params:
+      locale: es-CO
+    ok_status_codes: [200]
+    # Tienda 23 "La 65". Para obtenerlo de nuevo (código DANE de Medellín, 5 dígitos):
+    # GET https://www.jumbocolombia.com/api/checkout/pub/regions?country=COL&postalCode=05001
+    region_id: "v2.46CFB2D3A40B66B7454776AA8386DDAF"
+
+  olimpica:
+    name: Olímpica
+    domain: https://www.olimpica.com
+    search_path: /api/io/_v/api/intelligent-search/product_search/
+    extra_params: {}
+    ok_status_codes: [200]
+    # Tienda 340 "San Lucas". Para obtenerlo de nuevo:
+    # GET https://www.olimpica.com/api/checkout/pub/regions?country=COL&geoCoordinates=-75.5720205;6.1857539
+    region_id: "U1cjb2xpbXBpY2Fzd2wxMzQw"
