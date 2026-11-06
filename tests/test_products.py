@@ -450,3 +450,60 @@ def test_failed_store_is_left_out():
     assert "olimpica" not in result.store_totals
     assert result.cheapest_store == "jumbo"
     assert result.savings_single_store == Decimal("1000")
+
+
+# ---------------------------------------------------------------------------
+# Cambios del usuario después de la comparación
+# ---------------------------------------------------------------------------
+
+def test_units_to_cover_uses_previous_amount():
+    """Si antes se llevaba 1 kg y el nuevo paquete es de 500 g, hacen falta 2."""
+    from products import units_to_cover
+    previous = Selection("Arroz 1 kg", "exito", make_product("exito", "1", "4800", "1000", "g"), 1, "")
+    assert units_to_cover("Arroz 1 kg", previous, make_product("exito", "2", "2500", "500", "g")) == 2
+    # 1100 ml contra un paquete de 1000 ml: se redondea a 1, no a 2.
+    previous = Selection("Leche", "exito", make_product("exito", "3", "5000", "1100", "ml"), 1, "")
+    assert units_to_cover("Leche", previous, make_product("exito", "4", "4500", "1000", "ml")) == 1
+
+
+def test_units_to_cover_falls_back_to_item_text_or_previous_units():
+    """Sin producto anterior usa la presentación de la línea; con unidades distintas repite los paquetes."""
+    from products import units_to_cover
+    not_available = Selection("Azúcar 1 kg", "jumbo", None, 0, "")
+    assert units_to_cover("Azúcar 1 kg", not_available, make_product("jumbo", "1", "2000", "500", "g")) == 2
+    previous = Selection("2 Panela", "jumbo", make_product("jumbo", "2", "2700", "500", "g"), 2, "")
+    assert units_to_cover("2 Panela", previous, make_product("jumbo", "3", "900", "4", "und")) == 2
+
+
+def test_replace_selection_recalculates_without_touching_other_items():
+    """Cambiar el producto de una tienda recalcula totales, más barato y ahorro."""
+    from products import replace_selection
+    items = ["Arroz 1 kg", "Leche 1 L"]
+    rice_exito = make_product("exito", "1", "5000", "1000", "g")
+    rice_jumbo = make_product("jumbo", "1", "4000", "1000", "g")
+    milk_exito = make_product("exito", "2", "3000", "1000", "ml")
+    milk_jumbo = make_product("jumbo", "2", "3500", "1000", "ml")
+    selections = [
+        Selection("Arroz 1 kg", "exito", rice_exito, 1, ""),
+        Selection("Arroz 1 kg", "jumbo", rice_jumbo, 1, ""),
+        Selection("Leche 1 L", "exito", milk_exito, 1, ""),
+        Selection("Leche 1 L", "jumbo", milk_jumbo, 1, ""),
+    ]
+    result = run_compare(items, ["exito", "jumbo"], selections, {"exito": Decimal("1000")})
+    result.recommendation_text = "Texto del agente"
+    assert result.cheapest_store == "jumbo"   # Éxito 9.000 (con domicilio) vs Jumbo 7.500
+
+    cheaper_rice = make_product("exito", "9", "2000", "500", "g")
+    changed = replace_selection(result, "Arroz 1 kg", "exito", cheaper_rice, 2, "cambio")
+
+    assert changed.store_totals["exito"].total == Decimal("8000")   # 2x2000 + 3000 + 1000 de domicilio
+    assert changed.store_totals["jumbo"].total == Decimal("7500")
+    assert changed.rows[1].selections["exito"].product is milk_exito
+    assert changed.user_changes == {("Arroz 1 kg", "exito"): "cambio"}
+    assert changed.recommendation_text == "Texto del agente"
+    assert result.user_changes == {}   # el original no se modifica, para poder deshacer
+
+    removed = replace_selection(changed, "Leche 1 L", "jumbo", None, 0, "sin leche")
+    assert removed.rows[1].cheapest_store == "exito"
+    assert "Leche 1 L" not in removed.common_items
+    assert len(removed.user_changes) == 2

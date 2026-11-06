@@ -78,7 +78,7 @@ Detalles:
 
 Cómo trabajar con tus herramientas:
 1. Interpreta cada línea de la lista: producto, cantidad y presentación. Si la línea no trae presentación, asume la más común en Colombia (arroz 1 kg, leche 1 L, huevos x30, aceite 1 L, azúcar 1 kg, panela 500 g...) y anótala como supuesto.
-2. Para cada línea y cada tienda, llama search_store con una búsqueda corta y genérica: el nombre del producto, más la marca si el modo es "marca específica". No pongas cantidades en la búsqueda ("arroz", no "arroz 1 kg").
+2. Para cada línea y cada tienda, llama search_store con una búsqueda corta y genérica: el nombre del producto, más la marca si el modo es "marca específica". No pongas cantidades en la búsqueda ("arroz", no "arroz 1 kg"). En `item` pon la línea de la lista para la que buscas, copiada exacta.
 3. De los resultados, elige el producto equivalente. Revisa la lista completa: el buscador suele poner primero los paquetes grandes. Si la presentación pedida no aparece, haz una búsqueda un poco más específica (por ejemplo "arroz blanco" o el nombre de una marca común) antes de conformarte con otra presentación. Usa la presentación y el precio por unidad que te da la herramienta; no los calcules tú. Si un resultado trae una nota de "presentación dudosa", prefiere otro equivalente cuando exista.
 4. Si no hay un equivalente, reintenta con hasta 2 búsquedas alternativas (un sinónimo, sin marca o un término más genérico) antes de darlo por no disponible.
 5. Registra cada decisión con select_product: el ítem copiado EXACTO de la lista, la tienda, el product_id que devolvió search_store (o null si no está disponible), cuántos paquetes hay que comprar para cubrir la cantidad pedida (por ejemplo, "2 Panela" son 2; si piden 1 kg y el paquete es de 500 g, son 2) y una razón corta.
@@ -107,6 +107,9 @@ class AgentSession:
     # lo muestra. Así, si la UI lanza una excepción (p. ej. Streamlit al tocar un botón),
     # esta sale por el flujo principal y no rompe el servidor de tools del SDK.
     pending_events: list[tuple[str, str]] = field(default_factory=list)
+    # Cada búsqueda hecha: (tienda, ítem de la lista o None, product_ids devueltos).
+    # Con esto se arman las opciones que el usuario puede elegir después en la app.
+    searches: list[tuple[str, str | None, list[str]]] = field(default_factory=list)
 
     def store_name(self, store_id: str) -> str:
         """Nombre bonito de la tienda: "exito" -> "Éxito"."""
@@ -215,9 +218,10 @@ SEARCH_STORE_SCHEMA = {
     "properties": {
         "store_id": {"type": "string", "description": "Tienda: exito, jumbo u olimpica."},
         "query": {"type": "string", "description": "Texto corto a buscar, sin cantidades. Ej: 'arroz', 'leche entera'."},
+        "item": {"type": "string", "description": "La línea de la lista para la que buscas, copiada exacta."},
         "limit": {"type": "integer", "description": f"Máximo de productos a devolver (por defecto {DEFAULT_SEARCH_LIMIT})."},
     },
-    "required": ["store_id", "query"],
+    "required": ["store_id", "query", "item"],
 }
 
 SELECT_PRODUCT_SCHEMA = {
@@ -246,6 +250,49 @@ FINALIZE_SCHEMA = {
     },
     "required": ["assumptions"],
 }
+
+
+def match_item(session: AgentSession, item: str | None) -> str | None:
+    """Ítem de la lista al que se refiere el agente. Tolera mayúsculas y espacios; None si no coincide.
+
+    No se devuelve error si no coincide: la búsqueda sigue sirviendo, solo que sus
+    resultados no se ofrecen como opciones para cambiar en la app.
+    """
+    if not item:
+        return None
+    wanted = " ".join(item.split()).casefold()
+    for list_item in session.items:
+        if " ".join(list_item.split()).casefold() == wanted:
+            return list_item
+    return None
+
+
+def build_candidates(session: AgentSession) -> dict[str, dict[str, list[products.Product]]]:
+    """Opciones por ítem y tienda: lo que devolvieron las búsquedas de ese ítem en esa tienda.
+
+    También cuenta cualquier búsqueda que haya traído el producto elegido, por si el
+    agente no indicó el ítem. El producto elegido va primero y el resto por precio.
+    """
+    candidates: dict[str, dict[str, list[products.Product]]] = {}
+    for item in session.items:
+        candidates[item] = {}
+        for store_id in session.store_ids:
+            selection = session.selections.get((item, store_id))
+            chosen_id = selection.product.product_id if selection is not None and selection.product is not None else None
+            ids = []
+            for search_store_id, search_item, product_ids in session.searches:
+                if search_store_id != store_id:
+                    continue
+                if search_item == item or (chosen_id is not None and chosen_id in product_ids):
+                    for product_id in product_ids:
+                        if product_id not in ids:
+                            ids.append(product_id)
+            options = [session.found_products[product_id] for product_id in ids if product_id != chosen_id]
+            options.sort(key=lambda product: product.price)
+            if chosen_id is not None:
+                options.insert(0, session.found_products[chosen_id])
+            candidates[item][store_id] = options
+    return candidates
 
 
 def create_tools(session: AgentSession) -> list:
@@ -285,6 +332,7 @@ def create_tools(session: AgentSession) -> list:
 
         for product in found:
             session.found_products[product.product_id] = product
+        session.searches.append((store_id, match_item(session, args.get("item")), [product.product_id for product in found]))
         session.notify("resultado", f"{session.store_name(store_id)}: {len(found)} productos para «{query}»")
 
         if len(found) == 0:
@@ -377,6 +425,7 @@ def create_tools(session: AgentSession) -> list:
             city=session.config["city"],
             consulted_at=session.consulted_at,
         )
+        result.candidates = build_candidates(session)
         session.result = result
         session.notify("finalizado", "Cálculos listos; el agente está redactando la recomendación.")
         return text_result(describe_result_for_agent(session, result))

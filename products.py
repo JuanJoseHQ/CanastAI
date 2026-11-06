@@ -102,6 +102,11 @@ class ComparisonResult:
     not_found: list[str]
     failed_stores: dict[str, str] = field(default_factory=dict)   # tienda -> error
     recommendation_text: str = ""           # único texto redactado por el LLM
+    delivery_costs: dict[str, Decimal] = field(default_factory=dict)  # domicilio pedido por tienda
+    # Opciones que vio el agente: ítem -> tienda -> productos (para que el usuario cambie la elección)
+    candidates: dict[str, dict[str, list[Product]]] = field(default_factory=dict)
+    # Cambios hechos a mano por el usuario: (ítem, tienda) -> descripción del cambio
+    user_changes: dict[tuple[str, str], str] = field(default_factory=dict)
 
 
 # ---------------------------------------------------------------------------
@@ -584,6 +589,7 @@ def compare(
         assumptions=assumptions,
         not_found=not_found,
         failed_stores=failed_stores,
+        delivery_costs=dict(delivery_costs),
     )
 
 
@@ -648,3 +654,79 @@ def describe_savings(result: ComparisonResult, store_names: dict[str, str]) -> l
 
     lines.append(result.savings_note)
     return lines
+
+
+# ---------------------------------------------------------------------------
+# 5. Cambios del usuario después de la comparación
+# ---------------------------------------------------------------------------
+
+def units_to_cover(item: str, previous: Selection | None, product: Product) -> int:
+    """Cuántos paquetes de `product` cubren lo que se pedía para el ítem.
+
+    Toma como meta la cantidad que se llevaba con la elección anterior; si no había
+    producto, la presentación escrita en la línea ("Arroz 1 kg"). Si no se puede
+    calcular (unidades distintas o presentación desconocida), repite los paquetes de
+    antes, o 1. El usuario siempre puede corregir el número en la pantalla.
+    """
+    fallback = previous.units if previous is not None and previous.units > 0 else 1
+    if product.quantity is None or product.base_unit is None or product.quantity == 0:
+        return fallback
+
+    target = None
+    if previous is not None and previous.product is not None and previous.product.base_unit == product.base_unit:
+        target = purchased_amount(previous)
+    if target is None:
+        presentation = parse_presentation(item)
+        if presentation is not None and presentation.base_unit == product.base_unit:
+            target = presentation.quantity
+    if target is None:
+        return fallback
+
+    units = (target / product.quantity).quantize(Decimal("1"), rounding=ROUND_HALF_UP)
+    return max(1, int(units))
+
+
+def replace_selection(
+    result: ComparisonResult,
+    item: str,
+    store_id: str,
+    product: Product | None,
+    units: int,
+    change_note: str,
+) -> ComparisonResult:
+    """Cambia la elección de un ítem en una tienda y recalcula toda la comparación.
+
+    No vuelve a consultar las tiendas ni al agente: reutiliza las demás selecciones y
+    los mismos datos de la consulta. `product` debe salir de result.candidates (o ser
+    None para "no disponible").
+    """
+    if item not in [row.item for row in result.rows]:
+        raise ValueError(f"Ítem desconocido: {item}")
+    if store_id not in result.store_totals:
+        raise ValueError(f"Tienda sin resultados: {store_id}")
+    if product is not None and units < 1:
+        raise ValueError("Con un producto elegido, units debe ser 1 o más.")
+
+    selections = []
+    for row in result.rows:
+        for row_store_id, selection in row.selections.items():
+            if row.item == item and row_store_id == store_id:
+                selection = Selection(item, store_id, product, units if product is not None else 0, "Cambiado por el usuario.")
+            selections.append(selection)
+
+    new_result = compare(
+        items=[row.item for row in result.rows],
+        stores=result.stores,
+        selections=selections,
+        delivery_costs=result.delivery_costs,
+        assumptions=list(result.assumptions),
+        failed_stores=result.failed_stores,
+        mode=result.mode,
+        city=result.city,
+        consulted_at=result.consulted_at,
+    )
+    new_result.recommendation_text = result.recommendation_text
+    new_result.candidates = result.candidates
+    new_result.user_changes = dict(result.user_changes)
+    new_result.user_changes[(item, store_id)] = change_note
+    return new_result

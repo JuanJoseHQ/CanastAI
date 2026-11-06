@@ -20,8 +20,14 @@ import products
 FONTS_DIR = Path(__file__).parent / "fonts"
 
 TITLE = "Recomendación de compra — CanastAI"
-CHEAPEST_FILL = (220, 242, 220)    # verde claro para resaltar el más barato
-HEADER_FILL = (230, 230, 230)
+# Colores de la propuesta (los mismos de la app, ver .streamlit/config.toml)
+GREEN = (46, 125, 50)              # #2E7D32: títulos y encabezados de tabla
+WHITE = (255, 255, 255)
+TEXT = (27, 27, 27)
+MUTED = (110, 110, 110)
+CHEAPEST_FILL = (232, 245, 233)    # #E8F5E9: verde claro para resaltar el más barato
+HEADER_FILL = GREEN
+BORDER = (217, 222, 217)
 
 
 def store_name(config: dict, store_id: str) -> str:
@@ -49,10 +55,12 @@ def describe_selection(selection: products.Selection, is_cheapest: bool) -> str:
 
 
 def write_section_title(pdf: FPDF, text: str) -> None:
-    """Título de sección en negrilla con un poco de espacio antes."""
+    """Título de sección en verde y negrilla, como en la propuesta, con un poco de espacio antes."""
     pdf.ln(4)
     pdf.set_font("DejaVu", "B", 12)
+    pdf.set_text_color(*GREEN)
     pdf.cell(0, 8, text, new_x="LMARGIN", new_y="NEXT")
+    pdf.set_text_color(*TEXT)
     pdf.set_font("DejaVu", "", 9)
 
 
@@ -74,7 +82,9 @@ def write_recommendation_text(pdf: FPDF, text: str) -> None:
 def write_header(pdf: FPDF, result: products.ComparisonResult, config: dict) -> None:
     """Título y datos de la consulta: fecha y hora, ciudad, tiendas y modo."""
     pdf.set_font("DejaVu", "B", 16)
+    pdf.set_text_color(*GREEN)
     pdf.cell(0, 10, TITLE, new_x="LMARGIN", new_y="NEXT")
+    pdf.set_text_color(*TEXT)
     pdf.set_font("DejaVu", "", 10)
     store_names = [store_name(config, store_id) for store_id in result.stores]
     pdf.cell(0, 6, f"Generado: {datetime.now().strftime('%Y-%m-%d %H:%M')}    Precios consultados: {result.consulted_at}", new_x="LMARGIN", new_y="NEXT")
@@ -93,7 +103,7 @@ def write_products_table(pdf: FPDF, result: products.ComparisonResult, config: d
     first_column_width = 45
     store_column_width = (pdf.epw - first_column_width) / len(active_stores)
     col_widths = [first_column_width] + [store_column_width] * len(active_stores)
-    headings_style = FontFace(emphasis="BOLD", fill_color=HEADER_FILL)
+    headings_style = FontFace(emphasis="BOLD", color=WHITE, fill_color=HEADER_FILL)
     cheapest_style = FontFace(fill_color=CHEAPEST_FILL)
 
     with pdf.table(col_widths=col_widths, headings_style=headings_style, line_height=4, text_align="LEFT") as table:
@@ -121,7 +131,7 @@ def write_products_table(pdf: FPDF, result: products.ComparisonResult, config: d
 def write_totals(pdf: FPDF, result: products.ComparisonResult, config: dict) -> None:
     """Totales por tienda y óptimo dividido, con domicilios."""
     write_section_title(pdf, "Totales")
-    headings_style = FontFace(emphasis="BOLD", fill_color=HEADER_FILL)
+    headings_style = FontFace(emphasis="BOLD", color=WHITE, fill_color=HEADER_FILL)
     with pdf.table(col_widths=[60, 40, 40, 40, 40], headings_style=headings_style, line_height=5, width=220, align="LEFT") as table:
         heading = table.row()
         for title in ["Opción", "Productos", "Subtotal", "Domicilio", "Total"]:
@@ -151,7 +161,12 @@ def write_totals(pdf: FPDF, result: products.ComparisonResult, config: dict) -> 
 def write_recommendation(pdf: FPDF, result: products.ComparisonResult, config: dict) -> None:
     """Recomendación redactada por el agente y el ahorro calculado por products.py."""
     write_section_title(pdf, "Recomendación")
-    if result.recommendation_text:
+    if result.user_changes:
+        # El texto del agente se escribió antes de los cambios, así que ya no aplica.
+        write_paragraph(pdf, "Cambiaste productos después de la comparación; las cifras de este reporte ya incluyen tus cambios:")
+        for change in result.user_changes.values():
+            write_paragraph(pdf, f"• {change}")
+    elif result.recommendation_text:
         write_recommendation_text(pdf, result.recommendation_text)
     pdf.ln(2)
     store_names = {}
@@ -186,6 +201,7 @@ def write_footers(pdf: FPDF, result: products.ComparisonResult) -> None:
         pdf.page = page_number
         pdf.set_y(-12)
         pdf.set_font("DejaVu", "", 8)
+        pdf.set_text_color(*MUTED)
         pdf.cell(0, 5, f"{footer}    Página {page_number} de {total_pages}", align="C")
 
 
@@ -198,6 +214,8 @@ def build_pdf(result: products.ComparisonResult, config: dict) -> bytes:
     pdf.add_font("DejaVu", "I", str(FONTS_DIR / "DejaVuSans.ttf"))
     pdf.set_auto_page_break(True, margin=18)
     pdf.set_title(TITLE)
+    pdf.set_draw_color(*BORDER)
+    pdf.set_text_color(*TEXT)
     pdf.add_page()
 
     write_header(pdf, result, config)
